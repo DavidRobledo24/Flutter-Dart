@@ -5,14 +5,14 @@ void main() {
   List<int> lista2 = [];
 
   print("Ingrese los 15 valores para la lista 1:");
-  for (int i = 0; i < 15; i++) {
+  for (int i = 0; i < 5; i++) {
     print("Valor ${i + 1}: ");
     int? valor = int.parse(stdin.readLineSync()!);
     lista1.add(valor);
   }
 
   print("\nIngrese los 15 valores para la lista 2:");
-  for (int i = 0; i < 15; i++) {
+  for (int i = 0; i < 5; i++) {
     print("Valor ${i + 1}: ");
     int? valor = int.parse(stdin.readLineSync()!);
     lista2.add(valor);
@@ -23,8 +23,12 @@ void main() {
 
   if (sumaLista1 > sumaLista2) {
     print("\nLista 1 mayor");
+    print('valor lista 1: $sumaLista1');
+    print('valor lista 2: $sumaLista2');
   } else if (sumaLista2 > sumaLista1) {
     print("\nLista 2 mayor");
+    print('valor lista 1: $sumaLista1');
+    print('valor lista 2: $sumaLista2');
   } else {
     print("\nListas iguales");
   }
